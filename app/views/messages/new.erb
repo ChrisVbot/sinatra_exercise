@@ -1,14 +1,14 @@
 <h1>Post a message</h1>
 <hr/>
 
-<% if @message.errors.any? %>
+<% if @message && @message.errors.any? %>
   <div>
     <strong>Some issues with your message, please fix them:</strong>
     <ul>
-      <% @message.errors.full_message.each do |message| %>
+      <% @message.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
-    </ul>
+     </ul>
   </div>
 <% end %>
 
