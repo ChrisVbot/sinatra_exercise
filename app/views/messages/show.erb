@@ -8,12 +8,21 @@
 </p>
 
 <p>
-  <%= @message.URL %>
+  <a href="<%= @message.URL %>"><%= @message.URL %></a>
 </p>
 
 <p>
 Message created at: <%= @message.created_at %>
 </p>
-
 <hr/>
-<a href="/messages">Back to All Messages</a>
+
+<p>
+<a href="/messages/author">Show all posts by this author</a>
+</p>
+
+<p>
+  <a href="/messages">Back to All Messages</a>
+</p>
+
+
+
